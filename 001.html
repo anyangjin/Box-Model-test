@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과제</title>
+    <style>
+/* box1{
+border: 1px solid #000;
+background-color: #343F50;
+}
+box2{
+
+}
+box3{
+
+} */
+div{
+font-size: 50px;
+font-weight: bolder;
+align-items: center;
+display: flex;
+justify-content: center;
+color: azure;
+height: 80px;
+width: 350px;
+margin-bottom: 20px;
+box-sizing: border-box;
+
+}
+
+.box1 {
+  background-color: #343F50;
+  padding: 2px;
+  border: 5px solid #000;
+  /* ㆍ박스 안쪽에 그림자를 표현해야 한다면 inset 이라는 속성값을 사용한다. */
+  box-shadow:inset 4px 4px #4a5568;
+}
+
+.box2 {
+  background: linear-gradient(180deg, 	#8c49f6, #2e6df2);
+  border-radius: 50px;
+  outline-color: 4px dashed rgba(145,77,255,0.3);
+  border: 5px dashed rgb(206, 140, 219);
+  /* //겹치는 부분을 해결해준다. */
+  background-clip: padding-box;
+}
+.box3{
+  border: 5px solid #ddd;
+  color: #000;
+  border-radius: 0 50px 50px 50px;
+  box-shadow:  5px 5px 10px 0 #ddd;
+}
+.box4{
+  margin-top: 80px;
+  border: 5px solid #d2e650;
+    color: #000;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: blue 0px 0px 0px 2px inset,
+  rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px,
+    rgb(255, 255, 255) 20px -20px 0px -3px,
+      rgb(255, 217, 19) 20px -20px,
+      rgb(255, 255, 255) 30px -30px 0px -3px,
+        rgb(255, 156, 85) 30px -30px,
+        rgb(255, 255, 255) 40px -40px 0px -3px,
+          rgb(255, 85, 85) 40px -40px;
+  }    
+
+  .box5 {
+    margin-top: 50px;
+  background: linear-gradient(180deg, 	#8c49f6, #2e6df2);
+  border-radius: 50px;
+  outline-color: 4px dashed rgba(145,77,255,0.3);
+  border: 5px dashed rgb(92, 200, 78);
+  /* //겹치는 부분을 해결해준다. */
+    background-clip: padding-box;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+    rgb(31, 193, 27) 0px 0px 0px 6px,
+      rgb(255, 217, 19) 0px 0px 0px 9px,
+      rgb(255, 156, 85) 0px 0px 0px 12px,
+        rgb(255, 85, 85) 0px 0px 0px 15px;
+  }
+</style>
+  </head>
+  <body>
+    <div class="box1">HELLO&#9995</div>
+    <div class="box2">HELLO&#9995</div>
+    <div class="box3">HELLO&#9995</div>
+    <div class="box4">HELLO&#9995</div>
+    <div class="box5">HELLO&#9995</div>
+  </body>
+</html>
